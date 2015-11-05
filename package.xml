@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<package format="2">
+  <name>traj_ex_test</name>
+  <version>0.0.0</version>
+  <description>traj_ex_test</description>
+
+  <maintainer email="mathias.luedtke@ipa.fraunhofer.de">Mathias Lüdtke</maintainer>
+  <author email="mathias.luedtke@ipa.fraunhofer.de">Mathias Lüdtke</author>
+
+  <license>BSD</license>
+
+  <buildtool_depend>catkin</buildtool_depend>
+  <depend>actionlib</depend>
+  <depend>controller_interface</depend>
+  <depend>moveit_ros_control_interface</depend>
+  <depend>moveit_ros_planning</depend>
+  <depend>  moveit_simple_controller_manager</depend>
+  <depend>pluginlib</depend>
+  <depend>trajectory_msgs</depend>
+
+  <export>
+     <controller_interface plugin="${prefix}/controller_interface_plugins.xml" />
+     <moveit_ros_control_interface plugin="${prefix}/moveit_ros_control_interface_plugins.xml" />
+  </export>
+</package>

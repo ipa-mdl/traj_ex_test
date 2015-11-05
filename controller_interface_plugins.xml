@@ -1,0 +1,7 @@
+<class_libraries>
+  <library path="lib/libtraj_ex_test_controller">
+    <class name="traj_ex_test/TestJointTrajectoryController" type="traj_ex_test::TestJointTrajectoryController" base_class_type="controller_interface::ControllerBase">
+        <description></description>
+    </class>
+  </library>
+</class_libraries>

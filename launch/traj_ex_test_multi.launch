@@ -1,0 +1,9 @@
+<launch>
+  <arg name="joints"/>
+  <arg name="rate" default="0.0"/>
+  <node name="traj_ex_test" pkg="traj_ex_test" type="traj_ex_test" output="screen">
+    <rosparam param="joints" subst_value="True">$(arg joints)</rosparam>
+    <param name="rate" value="$(arg rate)" type="double"/>
+    <param name="moveit_controller_manager" value="moveit_ros_control_interface::MoveItMultiControllerManager"/>
+  </node>
+</launch>
